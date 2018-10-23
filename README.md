@@ -4,7 +4,7 @@
 </p>
 
 
-# *A Working Environment for Simulating Ocean Movement and Elemental Cycling in an Ocean Circulation Inverse Model framework*
+# *A Working Environment for Simulating Ocean Movement and Elemental cycling in an Ocean Circulation Inverse Model framework*
 
 This code runs the AWESOME OCIM model.
 A publication is in prep.
