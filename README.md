@@ -1,5 +1,8 @@
 <h1 align="center">AWESOME OCIM v1.1</h1>
-<img align=center src=http://www.mtel.rocks/mtel/awesomeOCIM_files/AO%20logo.jpg>
+<p align="center">
+  <img src=http://www.mtel.rocks/mtel/awesomeOCIM_files/AO%20logo.jpg>
+</p>
+
 
 # *A Working Environment for Simulating Ocean Movement and Elemental Cycling in an Ocean Circulation Inverse Model framework*
 
