@@ -7,11 +7,15 @@ addpath srcsnk
 load data/ao
 load data/water_transport
 
+ao.nlat = length(ao.lat)
+ao.nlon = length(ao.lon)
+ao.ndepth = length(ao.depth)
+
 % initailize the b array with zeros
-b = zeros(200160,1);
+b = zeros(ao.nocn,1);
 
 % initalize the A array with zeros
-A = sparse(200160,200160);
+A = sparse(ao.nocn,ao.nocn);
 
 % modify the A and b matrices to represent biogeochemical cycling; this
 % searches for do.function.on equal to 1, where the function is any of the
@@ -45,7 +49,7 @@ tic
 e=A\b; % these six characters perform the magic of linear algebra!
 toc
 
-% linear algebra solution yields an array of the 200160 values of elemental
+% linear algebra solution yields an array of the nocn=200160 values of elemental
 % concentrations (e), which we then need to put into a shoebox (put them
 % into the 3d model grid E)
 E = ao.nanOCN;
