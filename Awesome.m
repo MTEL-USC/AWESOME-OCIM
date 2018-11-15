@@ -7,10 +7,6 @@ addpath srcsnk
 load data/ao
 load data/water_transport
 
-ao.nlat = length(ao.lat)
-ao.nlon = length(ao.lon)
-ao.ndepth = length(ao.depth)
-
 % initailize the b array with zeros
 b = zeros(ao.nocn,1);
 

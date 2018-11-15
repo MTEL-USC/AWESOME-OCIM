@@ -43,7 +43,7 @@ zc = BOXTOP(1,1,3);
 % tops and bottoms of each box (note that this matrix is nlat x nlon x (ndepth+1) because
 % it contains the depth at the top of the top box and at the bottom of the
 % bottom box)
-INTDEPTH = cat(3,BOXTOP,BOXBOTTOM(:,:,ao.ndepth));
+INTDEPTH = cat(3,BOXTOP,BOXBOTTOM(:,:,length(ao.depth)));
 
 % calculate the particle concentration profile as the fraction remaining
 % compared to zc; this is the particle concentration at the interfaces
@@ -75,12 +75,12 @@ PFD = PFD.*ao.OCN;
 % remineralization at every depth within that grid-column will be related
 % to the productivity which occurred in the top grid cell (1,1,1), and
 % seprarately to the productivity which occurred in grid cell (1,1,2)
-KPROD1 = repmat(KPROD(:,:,1),1,1,ao.ndepth); KPROD2 = repmat(KPROD(:,:,2),1,1,ao.ndepth);
+KPROD1 = repmat(KPROD(:,:,1),1,1,length(ao.depth)); KPROD2 = repmat(KPROD(:,:,2),1,1,length(ao.depth));
 
 % similarly, the equation position (column in the A matrix) for every grid
 % cell in the water column (1,1,:) will depend on the equation position of
 % the top grid cell (1,1,1) from which particles originate
-FROM1 = repmat(ao.EQNPOS(:,:,1),1,1,ao.ndepth); FROM2 = repmat(ao.EQNPOS(:,:,2),1,1,ao.ndepth);
+FROM1 = repmat(ao.EQNPOS(:,:,1),1,1,length(ao.depth)); FROM2 = repmat(ao.EQNPOS(:,:,2),1,1,length(ao.depth));
 from1 = FROM1(ao.iocn); from2 = FROM2(ao.iocn);
 
 % the equation position (row in the A matrix) in which we slot the

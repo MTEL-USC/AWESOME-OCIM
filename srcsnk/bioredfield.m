@@ -40,7 +40,7 @@ zc = BOXTOP(1,1,3);
 % tops and bottoms of each box (note that this matrix is nlat x nlon x (ndepth+1) because
 % it contains the depth at the top of the top box and at the bottom of the
 % bottom box)
-INTDEPTH = cat(3,BOXTOP,BOXBOTTOM(:,:,ao.ndepth));
+INTDEPTH = cat(3,BOXTOP,BOXBOTTOM(:,:,length(ao.depth)));
 
 % calculate the particle concentration profile as the fraction remaining
 % compared to zc; this is the particle concentration at the interfaces
@@ -71,7 +71,7 @@ PFD = PFD.*ao.OCN;
 % remineralization which occurs in grid-column (1,1,:), the
 % remineralization at every depth within that grid-column will be related
 % to the productivity which occurred in the top grid cell (1,1,1)
-EPROD1 = repmat(EPROD(:,:,1),1,1,ao.ndepth); EPROD2 = repmat(EPROD(:,:,2),1,1,ao.ndepth);
+EPROD1 = repmat(EPROD(:,:,1),1,1,length(ao.depth)); EPROD2 = repmat(EPROD(:,:,2),1,1,length(ao.depth));
 
 % the magnitude of the remineralization is the surface productivity,
 % multiplied by the PFD (fraction of that productivity with remineralizes),

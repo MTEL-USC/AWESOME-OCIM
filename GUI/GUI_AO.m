@@ -695,7 +695,7 @@ if get(handles.radiobutton12,'value')
     depthAT=str2double(get(handles.edit33,'String'));
     ALLtop=ao.depth-ao.height/2;
     ALLbtm=ao.depth+ao.height/2;
-    for i=1:ao.ndepth
+    for i=1:length(ao.depth)
         if depthAT>=ALLtop(i) && depthAT<ALLbtm(i)
             layer=i;
         end
