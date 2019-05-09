@@ -37,7 +37,7 @@ sinkout = K*POC.*(w./ao.Height);
 
 % find the equation position (positions in the A matrix) of the grid cells
 % which lie below each cell
-EQNPOSBELOW = cat(3,ao.EQNPOS(:,:,2:24),zeros(91,180,1));
+EQNPOSBELOW = cat(3,ao.EQNPOS(:,:,2:length(ao.depth)),zeros(length(ao.lat),length(ao.lon),1));
 
 % define the equation positions that particles are sinking from, as well as
 % the volumes and heights of those grid cells

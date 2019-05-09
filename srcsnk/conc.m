@@ -37,12 +37,12 @@ taug = 1e6;
 
 % calculate the input of your element to every box at a rate set by the
 % concentration divided by a million years
-inputb = ones(200160,1)*c/taug;
+inputb = ones(size(b))*c/taug;
 
     
 % calculate the loss of your element from each box with a decay timescale of a
 % million years
-lossA = speye(200160,200160)/taug;
+lossA = speye(size(A))/taug;
 
 % modify the A abd b matrices
 b = b - inputb;
