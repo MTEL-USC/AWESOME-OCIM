@@ -1,0 +1,24 @@
+close all; clear all;
+
+load ../../data/grd.mat;
+load PO4_CTL;
+
+P_UP_WJ17 = grd.OCN;
+P_UP_WJ17(grd.iocn)=output.Flux.Jup;
+
+P_REM_WJ17 = grd.OCN;
+P_REM_WJ17(grid.iocn)=p
+
+PO4_WJ17 = grd.OCN;
+
+PO4_WJ17(grd.iocn)=output.po4;
+
+DOP_WJ17 = grd.OCN;
+
+DOP_WJ17(grd.iocn)=output.dop;
+
+save P_UP_WJ17.mat P_UP_WJ17
+
+save PO4_WJ17.mat PO4_WJ17
+
+save DOP_WJ17.mat DOP_WJ17
