@@ -4,7 +4,7 @@
 </p>
 
 
-This repository contains the MATLAB code and some data for the AWESOME OCIM, developed by Prof. Seth John (<sethjohn@usc.edu>) and Ph.D. student Hengdi Liang (<hengdili@usc.edu>) at the University of Southern California.
+This repository contains the MATLAB code and some data for the **AWESOME OCIM**, developed by Prof. Seth John (<sethjohn@usc.edu>) and Ph.D. student Hengdi Liang (<hengdili@usc.edu>) at the University of Southern California.
 
 
 ## Usage
