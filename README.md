@@ -1,11 +1,8 @@
-<h1 align="center">AWESOME OCIM v1.3</h1>
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/4486578/79958051-d2e70280-84c5-11ea-8a05-2f2b2f948e8d.jpg" width=50%>
 </p>
 
-
-***A Working Environment for Simulating Ocean Movement and Elemental cycling in an Ocean Circulation Inverse Model framework***
 
 This repository contains the MATLAB code and some data for the AWESOME OCIM, developed by Prof. Seth John (<sethjohn@usc.edu>) and Ph.D. student Hengdi Liang (<hengdili@usc.edu>) at the University of Southern California.
 
