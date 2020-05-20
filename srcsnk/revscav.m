@@ -52,11 +52,11 @@ tovol = ao.Vol(topos);
 
 % create the sinkout A matrix, and fill in the diagonal with the magnitude
 % of the sinking flux out
-sinkoutA = speye(ao.nocn,ao.nocn);
-sinkoutA(sinkoutA==1)=sinkout;
+% `spdiags` makes a sparse diagonal
+sinkoutA = spdiags(sinkout, 0, ao.nocn, ao.nocn);
 
 % calculate the amount of element transferred into each grid cell by
-% sinking with K, the sinking rate devided by the grid cell height from
+% sinking with K, the sinking rate divided by the grid cell height from
 % which sinking occurs, and a correction for volume
 sinkin = sinkout(frompos).*(fromvol./tovol);
 
