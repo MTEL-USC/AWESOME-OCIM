@@ -31,7 +31,7 @@ There are two ways to run a model using the AWESOME OCIM:
 
 If you use the AWESOME OCIM in your research, you should cite
 
-> John, S. G., Liang, H., Weber, T., Devries, T., Primeau, F., Moore, K., Holzer, M., Mahowald, N., Gardner, W., Mishonov, A., Richardson, M., J., Faugere, Y., and Taburet, G. (2020). *AWESOME OCIM: A simple, flexible, and powerful tool for modeling elemental cycling in the oceans*. Chemical Geology, 533, 119403. doi: 10.1016/j.chemgeo.2019.119403](https://doi.org/10.1016/j.chemgeo.2019.119403
+> John, S. G., Liang, H., Weber, T., Devries, T., Primeau, F., Moore, K., Holzer, M., Mahowald, N., Gardner, W., Mishonov, A., Richardson, M., J., Faugere, Y., and Taburet, G. (2020). *AWESOME OCIM: A simple, flexible, and powerful tool for modeling elemental cycling in the oceans*. Chemical Geology, 533, 119403. doi: [10.1016/j.chemgeo.2019.119403](https://doi.org/10.1016/j.chemgeo.2019.119403)
 
 (Or you can export the citation by clicking on the [doi: 10.1016/j.chemgeo.2019.119403](https://doi.org/10.1016/j.chemgeo.2019.119403) and then on the "Export" button)
 
