@@ -1,12 +1,12 @@
 function [A,b,output] = dust(A,b,do);
 %DUST adds a source of your element from aerosols 
 %   The underlying aerosol deposition fields come from the lab of Natalie
-%   Mahowald. The data was originally provided in units of kg m-2 y-1, but
+%   Mahowald. The data was originally provided in units of kg m-2 s-1, but
 %   they are stored in the AO in the structure AEROSOLDEP in units of mg
-%   m-3 y-1. That is to say that the surface flux has already been adjusted
+%   m-3 yr-1. That is to say that the surface flux has already been adjusted
 %   to assume that it is instantaneously mixed into the surface grid cell.
 %   Therefore, to further convert these fluxes into the AO units of mmole
-%   m-3 y-1, you will need to specify the amount of your element released
+%   m-3 yr-1, you will need to specify the amount of your element released
 %   by the dust in units of mmole/mg.
 
 fprintf('%s','dust...')
